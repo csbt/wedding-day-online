@@ -11,7 +11,7 @@ function ThemeToggles() {
   const themeMapping: Record<string, string> = {
     light: 'Default',
     'dark-classic': 'Dark',
-    tangerine: 'Tangerine',
+    pink: 'Pink',
     'dark-tangerine': 'Tangerine (dark)',
     mint: 'Mint',
     'dark-mint': 'Mint (dark)'

@@ -11,6 +11,11 @@
     --primary: #cbd5e1;
     --primary-foreground: #0f172a;
   }
+  html[data-theme='pink'] {
+    --primary: #f472b6;
+    --primary-foreground: #0f172a;
+  }
+
   html[data-theme='tangerine'] {
     --primary: #fcd34d;
     --primary-foreground: #0f172a;
