@@ -37,9 +37,11 @@ export default function RootLayout({
         `}
       >
         <ThemeProvider
-          defaultTheme='light'
+          defaultTheme='pink'
           enableColorScheme
+          enableSystem
           themes={[
+            'pink',
             'light',
             'dark-classic',
             'tangerine',

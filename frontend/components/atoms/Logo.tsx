@@ -6,7 +6,7 @@ type Props = {}
 const Logo: FC<Props> = () => {
   return (
     <div className='flex items-start gap-2 cursor-pointer'>
-      <h1 className='font-vibes font-bold text-3xl sm:text-4xl md:text-6xl font-script mb-2 md:mb-4 pb-0 dark:text-white'>
+      <h1 className='font-vibes font-bold text-3xl sm:text-4xl md:text-5xl font-script pb-0 dark:text-white'>
         Wedding<span className='text-primary'>ᥫᩣday</span>
       </h1>
       <Image

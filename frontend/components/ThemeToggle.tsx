@@ -9,9 +9,10 @@ function ThemeToggles() {
   useEffect(() => setMounted(true), [])
 
   const themeMapping: Record<string, string> = {
+    pink: 'Pink',
+
     light: 'Default',
     'dark-classic': 'Dark',
-    pink: 'Pink',
     'dark-tangerine': 'Tangerine (dark)',
     mint: 'Mint',
     'dark-mint': 'Mint (dark)'
