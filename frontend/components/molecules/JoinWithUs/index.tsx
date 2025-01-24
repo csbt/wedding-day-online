@@ -1,11 +1,8 @@
 import { motion } from 'framer-motion'
-import { useTheme } from 'next-themes'
 import React, { FC } from 'react'
 type Props = {}
 
-const JoinWithUs: FC<Props> = ({}) => {
-  const theme = useTheme()
-  console.log(`🚀🚀🚀 ~ theme:`, theme)
+const JoinWithUs: FC<Props> = () => {
   return (
     <div
       className='bg-pink-100 p-8  shadow-lg  h-[300px] flex items-center justify-center flex-col gap-4'

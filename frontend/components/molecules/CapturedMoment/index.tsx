@@ -1,7 +1,6 @@
 'use client'
 import { Gallery } from '@/components/atoms/react-grid-gallery'
-import React, { FC, useState } from 'react'
-import 'react-image-lightbox/style.css'
+import React, { FC } from 'react'
 
 const images = [
   {
@@ -30,25 +29,12 @@ const images = [
 
 type Props = {}
 
-const CapturedMoment: FC<Props> = ({}) => {
-  const [index, setIndex] = useState(-1)
-
-  const currentImage: any = images[index] as any
-  const nextIndex = (index + 1) % images.length
-  const nextImage: any = images[nextIndex] || currentImage
-  const prevIndex = (index + images.length - 1) % images.length
-  const prevImage: any = images[prevIndex] || currentImage
-
-  const handleClick = (index: number) => setIndex(index)
-  const handleClose = () => setIndex(-1)
-  const handleMovePrev = () => setIndex(prevIndex)
-  const handleMoveNext = () => setIndex(nextIndex)
-
+const CapturedMoment: FC<Props> = () => {
   return (
     <div>
       <Gallery
         images={images}
-        onClick={handleClick}
+        onClick={console.log}
         enableImageSelection={false}
       />
     </div>

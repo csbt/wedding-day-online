@@ -4,7 +4,7 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
 import React, { FC, useEffect } from 'react'
-import { Menu as MenuIcon, X as XIcon } from 'lucide-react'
+import { Menu as MenuIcon } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 type Props = {}
@@ -18,8 +18,8 @@ const navigation = [
   { name: 'BLOG', href: '/blog' }
 ]
 
-const Menu: FC<Props> = ({}) => {
-  const { theme, setTheme } = useTheme()
+const Menu: FC<Props> = () => {
+  const { setTheme } = useTheme()
   const [isOpen, setIsOpen] = React.useState(false)
   useEffect(() => {
     setTheme('pink')
