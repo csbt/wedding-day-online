@@ -2,7 +2,6 @@
 import { Gallery } from '@/components/atoms/react-grid-gallery'
 import React, { FC, useState } from 'react'
 import 'react-image-lightbox/style.css'
-import { Lightbox } from 'react-image-lightbox'
 
 const images = [
   {
@@ -52,21 +51,6 @@ const CapturedMoment: FC<Props> = ({}) => {
         onClick={handleClick}
         enableImageSelection={false}
       />
-      {!!currentImage && (
-        /* @ts-ignore */
-        <Lightbox
-          mainSrc={currentImage.original}
-          imageTitle={currentImage.caption}
-          mainSrcThumbnail={currentImage.src}
-          nextSrc={nextImage.original}
-          nextSrcThumbnail={nextImage.src}
-          prevSrc={prevImage.original}
-          prevSrcThumbnail={prevImage.src}
-          onCloseRequest={handleClose}
-          onMovePrevRequest={handleMovePrev}
-          onMoveNextRequest={handleMoveNext}
-        />
-      )}
     </div>
   )
 }
