@@ -4,6 +4,7 @@ import Couple from '../molecules/Couple'
 import JoinWithUs from '../molecules/JoinWithUs'
 import Menu from '../molecules/Menu'
 import SweetStory from '../molecules/SweetStory'
+import AttendingForm from '../molecules/AttendingForm'
 
 const Home = () => {
   return (
@@ -37,6 +38,8 @@ const Home = () => {
       <JoinWithUs />
 
       <CapturedMoment />
+
+      <AttendingForm />
     </div>
   )
 }
