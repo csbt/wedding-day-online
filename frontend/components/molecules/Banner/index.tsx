@@ -25,7 +25,7 @@ const Banner: FC<Props> = ({
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const images = [
-    'https://wpocean.com/html/tf/mylove-live/assets/images/slider/s1.png'
+    'https://wpocean.com/html/tf/mylove-live/assets/images/slider/s1.png',
   ]
 
   // Countdown logic

@@ -16,28 +16,32 @@ const storyEvents: StoryEvent[] = [
     date: 'January 15, 2020',
     description:
       'We first met at a coffee shop downtown. It was a chance encounter that changed our lives forever.',
-    image: 'https://wpocean.com/html/tf/mylove-live/assets/images/story/1.jpg'
+    // image: 'https://wpocean.com/html/tf/mylove-live/assets/images/story/1.jpg'
+    image: '/static/images/meet.jpg',
   },
   {
     title: 'First Date',
     date: 'October 08, 2024',
     description:
       'Our first official date was magical. We knew this was the beginning of something special.',
-    image: 'https://wpocean.com/html/tf/mylove-live/assets/images/story/2.jpg'
+    // image: 'https://wpocean.com/html/tf/mylove-live/assets/images/story/2.jpg'
+    image: '/static/images/date.jpg',
   },
   {
     title: 'Proposal',
     date: 'December 15, 2024',
     description:
       'Under the Christmas lights, I got down on one knee and asked the most important question.',
-    image: 'https://wpocean.com/html/tf/mylove-live/assets/images/story/3.jpg'
+    // image: 'https://wpocean.com/html/tf/mylove-live/assets/images/story/3.jpg'
+    image: '/static/images/proposal.jpg',
   },
   {
     title: 'Engagement',
     date: 'March 9, 2025',
     description:
       'We celebrated our engagement with family and friends, planning our future together.',
-    image: 'https://wpocean.com/html/tf/mylove-live/assets/images/story/4.jpg'
+    // image: 'https://wpocean.com/html/tf/mylove-live/assets/images/story/4.jpg'
+    image: '/static/images/engagement.jpg',
   }
 ]
 
