@@ -5,6 +5,7 @@ import JoinWithUs from '../molecules/JoinWithUs'
 import Menu from '../molecules/Menu'
 import SweetStory from '../molecules/SweetStory'
 import AttendingForm from '../molecules/AttendingForm'
+import ThemeToggles from '../ThemeToggle'
 
 const Home = () => {
   return (
@@ -13,23 +14,23 @@ const Home = () => {
       <Banner />
       <Couple
         bride={{
-          name: 'Tên cô dâu',
+          name: 'Khánh Huyền',
           avatar:
             'https://wpocean.com/html/tf/mylove-live/assets/images/couple/2.jpg',
           bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor vitae nisl. Erat fringilla pellentesque amet tempus. Commodo mi vitae, sed sagittis blandit. Leo netus magna fusce ac turpis mauris maecenas non.',
           socials: {
-            facebook: 'https://facebook.com/bride',
-            instagram: 'https://instagram.com/bride'
+            facebook: 'https://www.facebook.com/hoangkhanhhuyen1010',
+            instagram: 'https://www.facebook.com/hoangkhanhhuyen1010'
           }
         }}
         groom={{
-          name: 'Tên chú rể',
+          name: 'Xuân Trường',
           avatar:
             'https://wpocean.com/html/tf/mylove-live/assets/images/couple/3.jpg',
           bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna orci auctor vitae nisl. Erat fringilla pellentesque amet tempus. Commodo mi vitae, sed sagittis blandit. Leo netus magna fusce ac turpis mauris maecenas non.',
           socials: {
-            facebook: 'https://facebook.com/groom',
-            instagram: 'https://instagram.com/groom'
+            facebook: 'https://www.facebook.com/csbt7/',
+            instagram: 'https://www.facebook.com/csbt7/'
           }
         }}
       />

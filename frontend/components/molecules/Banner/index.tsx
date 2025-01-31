@@ -11,10 +11,10 @@ type Props = {
 
 const Banner: FC<Props> = ({
   brideAndGroom = {
-    bride: 'Bride Name',
-    groom: 'Groom Name'
+    bride: 'Khánh Huyền',
+    groom: 'Xuân Trường'
   },
-  weddingDate = new Date('2024-12-31')
+  weddingDate = new Date('2025-03-09')
 }) => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,

@@ -22,7 +22,7 @@ const Menu: FC<Props> = () => {
   const { setTheme } = useTheme()
   const [isOpen, setIsOpen] = React.useState(false)
   useEffect(() => {
-    setTheme('pink')
+    setTheme('main')
   }, [])
   return (
     <header

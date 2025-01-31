@@ -55,7 +55,7 @@ const AttendingForm = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className='bg-white/90 backdrop-blur-sm rounded-3xl shadow-lg p-8 md:p-12 border border-pink-100'
+          className='bg-white/90 backdrop-blur-sm rounded-3xl shadow-lg p-8 md:p-12 border border-[#960018]'
         >
           {/* Title */}
           <div className='text-center mb-12'>
@@ -70,7 +70,7 @@ const AttendingForm = () => {
               </h2>
               <div className='absolute -right-8 -top-6'>
                 <Heart
-                  className='text-pink-400 w-6 h-6 animate-pulse'
+                  className='text-[#960018] w-6 h-6 animate-pulse'
                   fill='currentColor'
                 />
               </div>
@@ -89,18 +89,18 @@ const AttendingForm = () => {
                 Your Name
               </label>
               <div className='relative'>
-                <User className='absolute left-0 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5 group-focus-within:text-pink-400 transition-colors' />
+                <User className='absolute left-0 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5 group-focus-within:text-[#960018] transition-colors' />
                 <input
                   {...register('name')}
                   className='w-full pl-8 pr-4 py-3 bg-transparent border-0 border-b-2 border-gray-200 
-                    focus:ring-0 focus:border-pink-300 transition-colors placeholder:text-gray-300
+                    focus:ring-0 focus:border-[#960018] transition-colors placeholder:text-gray-300
                     focus:outline-none'
                   placeholder='Enter your name'
                 />
               </div>
               {errors.name && (
-                <p className='mt-2 text-sm text-pink-500 flex items-center gap-1'>
-                  <span className='inline-block w-1 h-1 bg-pink-500 rounded-full'></span>
+                <p className='mt-2 text-sm text-[#960018] flex items-center gap-1'>
+                  <span className='inline-block w-1 h-1 bg-[#960018] rounded-full'></span>
                   {errors.name.message}
                 </p>
               )}
@@ -112,19 +112,19 @@ const AttendingForm = () => {
                 Email Address
               </label>
               <div className='relative'>
-                <Mail className='absolute left-0 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5 group-focus-within:text-pink-400 transition-colors' />
+                <Mail className='absolute left-0 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5 group-focus-within:text-[#960018] transition-colors' />
                 <input
                   {...register('email')}
                   type='email'
                   className='w-full pl-8 pr-4 py-3 bg-transparent border-0 border-b-2 border-gray-200 
-                    focus:ring-0 focus:border-pink-300 transition-colors placeholder:text-gray-300
+                    focus:ring-0 focus:border-[#960018] transition-colors placeholder:text-gray-300
                     focus:outline-none'
                   placeholder='Enter your email'
                 />
               </div>
               {errors.email && (
-                <p className='mt-2 text-sm text-pink-500 flex items-center gap-1'>
-                  <span className='inline-block w-1 h-1 bg-pink-500 rounded-full'></span>
+                <p className='mt-2 text-sm text-[#960018] flex items-center gap-1'>
+                  <span className='inline-block w-1 h-1 bg-[#960018] rounded-full'></span>
                   {errors.email.message}
                 </p>
               )}
@@ -144,7 +144,7 @@ const AttendingForm = () => {
                     {...register('isAttending')}
                     type='radio'
                     value='yes'
-                    className='w-4 h-4 text-pink-400 focus:ring-0 border-gray-300'
+                    className='w-4 h-4 text-[#960018] focus:ring-0 border-gray-300'
                   />
                   <span className='ml-3 text-gray-700'>
                     Yes, I will be there
@@ -158,7 +158,7 @@ const AttendingForm = () => {
                     {...register('isAttending')}
                     type='radio'
                     value='no'
-                    className='w-4 h-4 text-pink-400 focus:ring-0 border-gray-300'
+                    className='w-4 h-4 text-[#960018] focus:ring-0 border-gray-300'
                   />
                   <span className='ml-3 text-gray-700'>
                     Sorry, I can't come
@@ -180,21 +180,21 @@ const AttendingForm = () => {
                     Additional Guests
                   </label>
                   <div className='relative'>
-                    <Users className='absolute left-0 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5 group-focus-within:text-pink-400 transition-colors' />
+                    <Users className='absolute left-0 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5 group-focus-within:text-[#960018] transition-colors' />
                     <input
                       {...register('guestCount', { valueAsNumber: true })}
                       type='number'
                       min='0'
                       max='5'
                       className='w-full pl-8 pr-4 py-3 bg-transparent border-0 border-b-2 border-gray-200 
-                        focus:ring-0 focus:border-pink-300 transition-colors placeholder:text-gray-300
+                        focus:ring-0 focus:border-[#960018] transition-colors placeholder:text-gray-300
                         focus:outline-none'
                       placeholder='Number of additional guests'
                     />
                   </div>
                   {errors.guestCount && (
-                    <p className='mt-2 text-sm text-pink-500 flex items-center gap-1'>
-                      <span className='inline-block w-1 h-1 bg-pink-500 rounded-full'></span>
+                    <p className='mt-2 text-sm text-[#960018] flex items-center gap-1'>
+                      <span className='inline-block w-1 h-1 bg-[#960018] rounded-full'></span>
                       {errors.guestCount.message}
                     </p>
                   )}
@@ -208,10 +208,10 @@ const AttendingForm = () => {
               whileTap={{ scale: 0.99 }}
               type='submit'
               disabled={isSubmitting}
-              className='w-full bg-gradient-to-r from-pink-400 to-pink-500 text-white py-4 rounded-xl font-medium 
-                hover:from-pink-500 hover:to-pink-600 transition-all duration-300 
+              className='w-full bg-gradient-to-r from-[#960018] to-[#7b1113] text-white py-4 rounded-xl font-medium 
+                hover:from-[#960018] hover:to-[#7b1113] transition-all duration-300 
                 disabled:opacity-50 disabled:cursor-not-allowed
-                shadow-lg shadow-pink-200 hover:shadow-pink-300'
+                shadow-lg shadow-[#960018] hover:shadow-[#7b1113]'
             >
               {isSubmitting ? (
                 <span className='flex items-center justify-center gap-2'>

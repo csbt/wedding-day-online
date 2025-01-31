@@ -39,6 +39,11 @@
     --primary-foreground: #0f172a;
   }
 
+  html[data-theme='main'] {
+    --primary: #960018;
+    --primary-foreground: #FFFFFF;
+  }
+
   html[data-theme='tangerine'] {
     --primary: #fcd34d;
     --primary-foreground: #0f172a;
